@@ -1,5 +1,10 @@
 package clientes;
 
+import com.google.gson.Gson;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
+import javax.print.DocFlavor;
 import java.io.IOException;
 import java.net.http.HttpClient;
 import java.net.http.HttpResponse;
@@ -14,17 +19,13 @@ public class Cliente {
         try {
             HttpResponse<String> response = client
                     .send(solicitud.getRequest(), HttpResponse.BodyHandlers.ofString());
-
+            String json = response.body();
+            JsonObject jsonObject = JsonParser.parseString(json).getAsJsonObject();
+            double valorConvertido = jsonObject.get("conversion_rate").getAsDouble();
+            return valorConvertido * valor;
         } catch (IOException  | InterruptedException e) {
             throw new RuntimeException(e);
         }
-
-        return valor;
-    }
-
-
-    public String getAPI_KEY() {
-        return API_KEY;
     }
 }
 
