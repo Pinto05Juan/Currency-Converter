@@ -13,7 +13,7 @@ public class Cliente {
     HttpClient client = HttpClient.newHttpClient();
     private final String API_KEY = "452471a859fc1d51c1f7e5c2";
 
-    public double convertirDivisa(double valor, String base, String target) {
+    public double convertirDivisa(String base, String target) {
         Solicitud solicitud = new Solicitud("https://v6.exchangerate-api.com/v6/" + API_KEY + "/pair/" + base + "/" + target + "/");
 
         try {
@@ -21,11 +21,15 @@ public class Cliente {
                     .send(solicitud.getRequest(), HttpResponse.BodyHandlers.ofString());
             String json = response.body();
             JsonObject jsonObject = JsonParser.parseString(json).getAsJsonObject();
-            double valorConvertido = jsonObject.get("conversion_rate").getAsDouble();
-            return valorConvertido * valor;
+            return jsonObject.get("conversion_rate").getAsDouble();
+
         } catch (IOException  | InterruptedException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public double realizarConversion(double valorConvertido, double valor){
+        return valorConvertido * valor;
     }
 }
 
