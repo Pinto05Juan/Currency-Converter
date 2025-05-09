@@ -22,44 +22,32 @@ public class Principal {
                 case 1:
                     System.out.println("Ingrese el valor que desea convertir: ");
                     valor = scan.nextDouble();
-                    valorConvertido = client.convertirDivisa("USD", "ARS");
-                    valorReal = client.realizarConversion(valorConvertido, valor);
-                    System.out.println("El valor " + valor + " USD" + " corresponde al valor final de " + valorReal + " ARS");
+                    //System.out.println("El valor " + valor + " USD" + " corresponde al valor final de " + valorReal + " ARS");
                     break;
                 case 2:
                     System.out.println("Ingrese el valor que desea convertir: ");
                     valor = scan.nextDouble();
-                    valorConvertido = client.convertirDivisa("ARS", "USD");
-                    valorReal = client.realizarConversion(valorConvertido, valor);
-                    System.out.println("El valor " + valor + " ARS" + " corresponde al valor final de " + valorReal + " USD");
+                    //System.out.println("El valor " + valor + " ARS" + " corresponde al valor final de " + valorReal + " USD");
                     break;
                 case 3:
                     System.out.println("Ingrese el valor que desea convertir: ");
                     valor = scan.nextDouble();
-                    valorConvertido = client.convertirDivisa("USD", "BRL");
-                    valorReal = client.realizarConversion(valorConvertido, valor);
-                    System.out.println("El valor " + valor + " USD" + " corresponde al valor final de " + valorReal + " BRL");
+                    //System.out.println("El valor " + valor + " USD" + " corresponde al valor final de " + valorReal + " BRL");
                     break;
                 case 4:
                     System.out.println("Ingrese el valor que desea convertir: ");
                     valor = scan.nextDouble();
-                    valorConvertido = client.convertirDivisa("BRL", "USD");
-                    valorReal = client.realizarConversion(valorConvertido, valor);
-                    System.out.println("El valor " + valor + " BRL" + " corresponde al valor final de " + valorReal + " USD");
+                    //System.out.println("El valor " + valor + " BRL" + " corresponde al valor final de " + valorReal + " USD");
                     break;
                 case 5:
                     System.out.println("Ingrese el valor que desea convertir: ");
                     valor = scan.nextDouble();
-                    valorConvertido = client.convertirDivisa("USD", "COP");
-                    valorReal = client.realizarConversion(valorConvertido, valor);
-                    System.out.println("El valor " + valor + " USD" + " corresponde al valor final de " + valorReal + " COP");
+                    //System.out.println("El valor " + valor + " USD" + " corresponde al valor final de " + valorReal + " COP");
                     break;
                 case 6:
                     System.out.println("Ingrese el valor que desea convertir: ");
                     valor = scan.nextDouble();
-                    valorConvertido = client.convertirDivisa("COP", "USD");
-                    valorReal = client.realizarConversion(valorConvertido, valor);
-                    System.out.println("El valor " + valor + " COP" + " corresponde al valor final de " + valorReal + " USD");
+                    //System.out.println("El valor " + valor + " COP" + " corresponde al valor final de " + valorReal + " USD");
                     break;
                 case 7:
                     salir = true;
