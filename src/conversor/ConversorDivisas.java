@@ -1,5 +1,6 @@
-package clientes;
+package conversor;
 
+import clientes.Cliente;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 
