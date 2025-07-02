@@ -24,7 +24,7 @@ public class Principal {
                     client.realizeSolicited();
                     break;
                 case 3:
-                    //client.mostrarHistorial();
+                    client.showHistorial();
                     break;
                 case 4:
                     finProgram = true;
@@ -42,7 +42,7 @@ public class Principal {
         System.out.println("""
                 1) Mostrar Monedas Disponibles
                 2) Conversion
-                3) Historial de Conversiones
+                3) Mostrar Historial
                 4) Salir
                 """);
     }

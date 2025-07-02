@@ -13,12 +13,13 @@ public class Cliente {
     private final String API_KEY;
     private final BaseDeMonedas baseDeMonedas;
     private final ConversorDivisas conversorDivisas;
-
+    private Historial historial;
     public Cliente() {
         client = HttpClient.newHttpClient();
         API_KEY = "452471a859fc1d51c1f7e5c2";
         baseDeMonedas = new BaseDeMonedas();
         conversorDivisas = new ConversorDivisas();
+        historial = new Historial();
     }
 
     private String request(String base, String target) {
@@ -48,6 +49,7 @@ public class Cliente {
         try {
             double valorReal = conversorDivisas.convertCurrency(jsonString, valor);
             System.out.println(valor + " [" + baseCode + "]" + " -> " + valorReal + " [" + targetCode + "]");
+            historial.guardarConversion(valor, baseCode, valorReal, targetCode);
         } catch (NullPointerException e) {
             System.out.println("La divisa base o de origen son incorrectas. Puede fijarse en el menu cuales estan disponibles");
             Recurso.scanner.nextLine(); // clean the buffer
@@ -55,11 +57,11 @@ public class Cliente {
     }
 
     public void mostrarMonedas() {
-        baseDeMonedas.showCurrencies();
+        baseDeMonedas.show();
     }
 
     public void showHistorial() {
-
+        historial.show();
     }
 }
 

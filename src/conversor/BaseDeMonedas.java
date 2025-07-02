@@ -18,7 +18,7 @@ public class BaseDeMonedas {
         currencies.put("CLP", "CHILE");
         currencies.put("COP", "COLOMBIA");
         currencies.put("GBP", "REINO UNIDO");
-        currencies.put("MEX", "MEXICO");
+        currencies.put("MXN", "MEXICO");
         currencies.put("PEN", "PERU");
         currencies.put("PYG", "PARAGUAY");
         currencies.put("UYU", "URUGUAY");
@@ -28,7 +28,7 @@ public class BaseDeMonedas {
         currencies.put("USD", "ESTADOS UNIDOS");
     }
 
-    public void showCurrencies() {
+    public void show() {
         currencies.forEach((codigo, pais) ->
                 System.out.println(codigo + " -> " + pais));
     }
