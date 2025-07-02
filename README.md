@@ -3,7 +3,8 @@
 <h2>Descripcion del Proyecto</h2>
 
 <h4 align="center">
-:construction: Proyecto en construcción :construction:
+:construction: Proyecto en construcción : Finalizado:
+  <p>VERSION 1.0</p>
 </h4>
 
 <p>Proyecto en desarrollo para Challenge conversor de Monedas - Alura. Currency Converter es un sistema de divisa para la conversion de distitos tipos de monedas</p>
