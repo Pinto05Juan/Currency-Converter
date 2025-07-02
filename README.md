@@ -18,10 +18,10 @@ Status del proyecto : Finalizado
 - `Funcionalidad 3`: Registro con Marca de Tiempo
 
 <h3>Vamos con la explicacion del Programa: </h3>
-📝 Ejemplo de uso
+<h3>📝 Ejemplo de uso</h3>
 
 
-📄 <h3>Licencia</h3>
+ <h3>📄 Licencia</h3>
 Este proyecto está bajo la licencia MIT.
 
 <h3>Tecnologias utilizadas</h3>
