@@ -21,7 +21,7 @@ Status del proyecto : Finalizado
 📝 Ejemplo de uso
 
 
-📄 Licencia
+📄 <h3>Licencia</h3>
 Este proyecto está bajo la licencia MIT.
 
 <h3>Tecnologias utilizadas</h3>
