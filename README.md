@@ -3,7 +3,7 @@
 <h2>Descripcion del Proyecto</h2>
 
 <h4 align="center">
-:construction: Proyecto en construcción : Finalizado:
+Proyecto en construcción : Finalizado:
   <p>VERSION 1.0</p>
 </h4>
 
@@ -16,6 +16,9 @@
 - `Funcionalidad 1`: Conversion de un valor al tipo de moneda deseado
 - `Funcionalidad 2`: Historial de conversiones realizadas
 - `Funcionalidad 3`: Registro con Marca de Tiempo
+
+<h3>Vamos con la explicacion del Programa: </h3>
+
 
 <h3>Tecnologias utilizadas</h3>
 - Java 20
