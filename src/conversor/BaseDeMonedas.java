@@ -3,14 +3,14 @@ package conversor;
 import java.util.HashMap;
 
 public class BaseDeMonedas {
-    private HashMap<String, String> currencies;
+    private final HashMap<String, String> currencies;
 
     public BaseDeMonedas() {
         currencies = new HashMap<>();
-        cargarBase();
+        loadBase();
     }
 
-    public void cargarBase() {
+    private void loadBase() {
         currencies.put("ARS", "ARGENTINA");
         currencies.put("BOB", "BOLIVIA");
         currencies.put("BRL", "BRASIL");
@@ -19,7 +19,7 @@ public class BaseDeMonedas {
         currencies.put("COP", "COLOMBIA");
         currencies.put("GBP", "REINO UNIDO");
         currencies.put("MEX", "MEXICO");
-        currencies.put("PER", "PERU");
+        currencies.put("PEN", "PERU");
         currencies.put("PYG", "PARAGUAY");
         currencies.put("UYU", "URUGUAY");
         currencies.put("VES", "VENEZUELA");
@@ -28,11 +28,7 @@ public class BaseDeMonedas {
         currencies.put("USD", "ESTADOS UNIDOS");
     }
 
-    public void cargarNuevaMoneda(String baseCode, String country) {
-        currencies.put(baseCode, country);
-    }
-
-    public void mostrarMonedas() {
+    public void showCurrencies() {
         currencies.forEach((codigo, pais) ->
                 System.out.println(codigo + " -> " + pais));
     }

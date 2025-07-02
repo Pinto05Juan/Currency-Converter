@@ -5,7 +5,7 @@ import java.net.http.HttpRequest;
 
 public class Solicitud {
 
-    private HttpRequest request;
+    private final HttpRequest request;
 
     public Solicitud(String direccion) {
         this.request = HttpRequest.newBuilder()
