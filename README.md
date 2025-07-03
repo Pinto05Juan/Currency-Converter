@@ -19,7 +19,14 @@ Status del proyecto : Finalizado
 
 <h3>Vamos con la explicacion del Programa: </h3>
 <h3>📝 Ejemplo de uso</h3>
+Al comienzo de iniciar aparecera el siguiente menu:
+![MENU DE INICIO](images/Captura1.png)
 
+A continuación se muestra una conversión de EUR a ARS realizada en el programa:
+![CONVERSION REALIZADA](images/Captura2.png)
+
+El historial se guarda en un archivo de texto plano:
+![HISTORIAL](images/Captura3.png)
 
  <h3>📄 Licencia</h3>
 Este proyecto está bajo la licencia MIT.
