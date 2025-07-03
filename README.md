@@ -21,10 +21,10 @@ Status del proyecto : Finalizado
 <h3>📝 Ejemplo de uso</h3>
 Al comienzo de iniciar aparecera el siguiente menu:
 <img src="images/Captura1.PNG">
-
+<br>
 A continuación se muestra una conversión de EUR a ARS realizada en el programa:
 <img src="images/Captura2.PNG">
-
+<br>
 El historial se guarda en un archivo de texto plano:
 <img src="images/Captura3.PNG">
 
