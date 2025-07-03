@@ -31,13 +31,14 @@ El historial se guarda en un archivo de texto plano:
  <h3>📄 Licencia</h3>
 Este proyecto está bajo la licencia MIT.
 
+<h3>🙋‍♂️ Autor</h3>
+Juan Pinto - @Pinto05Juan
+
 <h3>Tecnologias utilizadas</h3>
 - Java 20
 - Gson
 - Exchange
 - Vercel
 
-🙋‍♂️ Autor
-Juan Pinto - @Pinto05Juan
 
 
