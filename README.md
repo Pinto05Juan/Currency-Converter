@@ -3,7 +3,8 @@
 <h2>Descripcion del Proyecto</h2>
 
 <h4 align="center">
-:construction: Proyecto en construcción :construction:
+Status del proyecto : Finalizado
+  <p>VERSION 1.0</p>
 </h4>
 
 <p>Proyecto en desarrollo para Challenge conversor de Monedas - Alura. Currency Converter es un sistema de divisa para la conversion de distitos tipos de monedas</p>
@@ -16,8 +17,20 @@
 - `Funcionalidad 2`: Historial de conversiones realizadas
 - `Funcionalidad 3`: Registro con Marca de Tiempo
 
+<h3>Vamos con la explicacion del Programa: </h3>
+<h3>📝 Ejemplo de uso</h3>
+
+
+ <h3>📄 Licencia</h3>
+Este proyecto está bajo la licencia MIT.
+
 <h3>Tecnologias utilizadas</h3>
 - Java 20
 - Gson
 - Exchange
 - Vercel
+
+🙋‍♂️ Autor
+Juan Pinto - @Pinto05Juan
+
+
